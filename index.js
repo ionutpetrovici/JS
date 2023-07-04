@@ -27,13 +27,14 @@ let result = division(number);
 // afișează pe ecran viitorul dvs. în felul următor: "Vei fi un X în Y, căsătorit cu Z și vei avea N copii."
 // În rezolvarea problemei, vom încerca să abordăm șirurile templetizate (${variabila} este o variabila.).
 
-
-let NumarCopii = (3);
-let NumePartener = ("Andreea");
-let LocatiaGeografica = ("Norvegia");
-let LocMunca = ("Programator");
-
-console.log("Vei fi un " + LocMunca + "," + " casatorit cu " + NumePartener + " si vei avea " + NumarCopii + " copii !!")
+const tellFortune = (n, z, y, x) => {
+  let NumarCopii = (3);
+  let NumePartener = ("Andreea");
+  let LocatiaGeografica = ("Norvegia");
+  let LocMunca = ("Programator");
+  return "Vei fi un " + x + "," + " casatorit cu " + y + " si vei avea " + n + " copii !!";
+}
+console.log(tellFortune(NumarCopii, NumePartener, LocatiaGeografica, LocMunca));
 
 
 // 3. Folosind instrucțiunea JavaScript switch se va obține ziua săptămânii
